@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style/registration.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style/all.min.css">
+  <title>הזמנות ורישום</title>
+  <link rel="icon" type="image/x-icon" href="../images/favicons/favicon (7).ico">
+</head>
+
+<body dir="rtl">
+  <img id="logo" src="../images/לוגו זהב.png">
+  <a id="return" href="../html/index-visitorsCenter.html"><i class="fa-solid fa-share"></i> חזרה לעמוד מרכז המבקרים</a>
+  <a href="../html/index-main.html"><img id="home" src="../images/home_FILL0_wght300_GRAD0_opsz48.png" alt=""></i></a>
+  <h2 id="register">להזמנת סיורים וטעימות </h2>
+  <p>שעות פתיחת מרכז המבקרים:<br>ימים א'-ה': 18:00 - 8:30 <br>ימי שישי וערבי חגים: סגור
+  </p>
+  <form action=""></form>
+  <div id="warrper">
+
+    <section class="details">
+      <label for="name">שם (פרטי / קבוצה)</label><br>
+      <input type="text" name="name" id="name">
+    </section>
+
+    <section class="details">
+      <label for="userId">טלפון</label><br>
+      <input type="text" name="userId id=" userId>
+    </section>
+
+    <section class="details">
+      <label for="course">בחירת סיור</label><br>
+      <select name="course" id="course">
+        <option value="confectionery">טעימות</option>
+        <option value="pralines">סיור לקבוצות</option>
+        <option value="designing_and_decorating_cakes">סיור בכרם</option>
+
+      </select>
+    </section>
+
+    <section class="details">
+      <label for="amount">מספר המשתתפים</label><br>
+      <input type="number" name="amount" id="amount" min="1" max="80">
+    </section>
+
+    <section class="details">
+      <label for="dateBirth">תאריך:</label><br>
+      <input type="date" name="dateBirth" id="dateBirth">
+    </section>
+    <section class="details">
+      <label for="appt">שעה:</label><br>
+      <input type="time" id="appt" name="appt">
+    </section>
+
+    <section class="details">
+      <label for="extra">משהו מיוחד שתרצו להגיד לנו מראש?</label><br>
+      <br>
+      <textarea id="extra" name="extra" rows="5" cols="40"></textarea>
+    </section>
+    <!-- <div></div> -->
+    <button id="close" onclick="document.getElementById('send').style.display='block'">שליחה וסגירת ההזמנה</button>
+
+    <div id="send">
+      <h1>קלטנו את הזמנתכם ורשמנו ביומן,<br> תודה שבחרתם להנות ביקב דולב,<br> מחכים לכם בפעם הבאה:)</h1>
+      <a href="../html/index-visitorsCenter.html"><button id="ok"
+          onclick="document.getElementById('send').style.display='none'">אישור</button></a>
+
+    </div>
+    </form>
+</body>
+
+</html>

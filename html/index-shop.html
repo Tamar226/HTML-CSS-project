@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../style/style-shop.css">
+   <link rel="stylesheet" href="../style/all.min.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+   <title>חנות</title>
+   <link rel="icon" type="image/x-icon" href="../images/favicons/favicon (6).ico">
+
+</head>
+
+<body dir="rtl">
+   <div id="checking">
+      <div id="q18">
+         <h2>האם אתה מעל 18?</h2>
+         <button onclick="document.getElementById('checking').style.display='none'">כן</button>
+         <a href="../html/under18.html"><button>לא</button></a>
+      </div>
+   </div>
+   <nav>
+      <div id="navP">
+         <p>משלוחים לכל חלקי הארץ!</p>
+      </div>
+
+      <div id="navImg">
+         <a href="../html/index-main.html"><img id="home" src="../images/home_FILL0_wght300_GRAD0_opsz48.png"
+               alt=""></a>
+         <img id="navBag" src="../images/shopping_bag.png"
+            onclick="document.getElementById('shoppingList').style.display='block'">
+         <img id="logo" src="../images/לוגו זהב1.png" alt="">
+      </div>
+   </nav>
+
+   <header>
+      <div id="heading">
+         <div>
+            <h1>היינות שלנו</h1>
+            <button><a href="#shop">לחנות</a></button>
+         </div>
+      </div>
+      <div class="image-gallery">
+         <div class="image-container">
+            <input type="radio" name="gallery_group" id="image1" checked />
+            <div class="image-1">
+               <label class="prev" for="image4"></label>
+               <label class="next" for="image2"></label>
+            </div>
+            <input type="radio" name="gallery_group" id="image2" />
+            <div class="image-2">
+               <label class="prev" for="image1"></label>
+               <label class="next" for="image3"></label>
+            </div>
+            <input type="radio" name="gallery_group" id="image3" />
+            <div class="image-3">
+               <label class="prev" for="image2"></label>
+               <label class="next" for="image4"></label>
+            </div>
+            <input type="radio" name="gallery_group" id="image4" />
+            <div class="image-4">
+               <label class="prev" for="image3"></label>
+               <label class="next" for="image1"></label>
+            </div>
+         </div>
+      </div>
+
+
+   </header>
+   <form action="./data.html" method="POST" autocomplete="on">
+      <section id="shop">
+
+
+         <div dir="ltr" class="shop_item" id="wine1">
+            <label for="inputWine1"><i class="fa-solid fa-cart-shopping"></i></label>
+         </div>
+
+         <p id="p1">אלכסנדר בונה פרל רוזה</p>
+
+
+
+         <div dir="ltr" class="shop_item" id="wine2">
+            <label for="inputWine2"><i class="fa-solid fa-cart-shopping"></i></label>
+         </div>
+         <p id="p2">דה אתנה רוזה</p>
+
+
+         <div dir="ltr" class="shop_item" id="wine3">
+            <label for="inputWine3"><i class="fa-solid fa-cart-shopping"></i></label>
+         </div>
+         <p id="p3">לואיס פליפה נוקוס מלבק</p>
+
+
+
+         <div dir="ltr" class="shop_item" id="wine4">
+            <label for="inputWine4"><i class="fa-solid fa-cart-shopping"></i></label>
+         </div>
+         <p id="p4">לינדמנ'ס שיראז</p>
+
+
+         <div dir="ltr" class="shop_item" id="wine5">
+            <label for="inputWine5"><i class="fa-solid fa-cart-shopping"></i></label>
+         </div>
+         <p id="p5">מוסקדה "חקלאים"</p>
+
+
+         <div dir="ltr" class="shop_item" id="wine6">
+            <label for="inputWine6"><i class="fa-solid fa-cart-shopping"></i></label>
+         </div>
+         <p id="p6">פינטו קיאנטי קלאסיקו ריזרבה</p>
+
+         <div dir="ltr" class="shop_item" id="wine7">
+            <label for="inputWine7"><i class="fa-solid fa-cart-shopping"></i></label>
+         </div>
+         <p id="p7">פלטר סובניון בלאן</p>
+
+         <div dir="ltr" class="shop_item" id="wine8">
+            <label for="inputWine8"><i class="fa-solid fa-cart-shopping"></i></label>
+         </div>
+         <p id="p8">פסקווא רוזה מבעבע</p>
+
+         <div dir="ltr" class="shop_item" id="wine9">
+            <label for="inputWine9"><i class="fa-solid fa-cart-shopping"></i></label>
+         </div>
+         <p id="p9">קסטלני וינו רוזה קורטה אל מינה</p>
+
+         <div dir="ltr" class="shop_item" id="wine10">
+            <label for="inputWine10"><i class="fa-solid fa-cart-shopping"></i></label>
+         </div>
+         <p id="p10">קפסנס מס פיקוסה אדום</p>
+
+         <div dir="ltr" class="shop_item" id="wine11">
+            <label for="inputWine11"><i class="fa-solid fa-cart-shopping"></i></label>
+         </div>
+         <p id="p11">קפסנס מס פיקוסה לבן</p>
+
+
+         <div dir="ltr" class="shop_item" id="wine12">
+            <label for="inputWine12"><i class="fa-solid fa-cart-shopping"></i></label>
+         </div>
+         <p id="p12">רינקון דל סול מלבק</p>
+         <h4 onclick="document.getElementById('shoppingList').style.display='block'">לעגלה>></h4>
+
+      </section>
+
+      <div id="shoppingList">
+         <i class="fa-regular fa-circle-xmark"
+            onclick="document.getElementById('shoppingList').style.display='none'"></i>
+         <div id="shoppingChart">
+            <h2>עגלת קניות</h2>
+
+            <input type="checkbox" id="inputWine1" name="wine1" value="wine1">
+            <label for="inputWine1">אלכסנדר בונה פרל רוזה </label><br>
+            <label for="amount1">כמות:</label>
+            <input type="number" id="amount1" name="amount_0f_wine1" min="1"><br><br>
+
+            <input type="checkbox" id="inputWine2" name="wine2" value="wine2">
+            <label for="inputWine2">דה אתנה רוזה </label><br>
+            <label for="amount2">כמות:</label>
+            <input type="number" id="amount2" name="amount_0f_wine2" min="1"><br><br>
+
+            <input type="checkbox" id="inputWine3" name="wine3" value="wine3">
+            <label for="inputWine3">לואיס פליפה נוקוס מלבק </label><br>
+            <label for="amount3">כמות:</label>
+            <input type="number" id="amount3" name="amount_0f_wine3" min="1"><br><br>
+
+            <input type="checkbox" id="inputWine4" name="wine4" value="wine4">
+            <label for="inputWine4">לינדמנ'ס שיראז</label><br>
+            <label for="amount4">כמות:</label>
+            <input type="number" id="amount4" name="amount_0f_wine4" min="1"><br><br>
+
+            <input type="checkbox" id="inputWine5" name="wine5" value="wine5">
+            <label for="inputWine5">מוסקדה "חקלאים"</label><br>
+            <label for="amount5">כמות:</label>
+            <input type="number" id="amount5" name="amount_0f_wine5" min="1"><br><br>
+
+            <input type="checkbox" id="inputWine6" name="wine6" value="wine6">
+            <label for="inputWine6">פינטו קיאנטי קלאסיקו ריזרבה</label><br>
+            <label for="amount6">כמות:</label>
+            <input type="number" id="amount6" name="amount_0f_wine6" min="1"><br><br>
+
+            <input type="checkbox" id="inputWine7" name="wine7" value="wine7">
+            <label for="inputWine7">פלטר סובניון בלאן</label><br>
+            <label for="amount7">כמות:</label>
+            <input type="number" id="amount7" name="amount_0f_wine7" min="1"><br><br>
+
+            <input type="checkbox" id="inputWine8" name="wine8" value="wine8">
+            <label for="inputWine8">פסקווא רוזה מבעבע</label><br>
+            <label for="amount8">כמות:</label>
+            <input type="number" id="amount8" name="amount_0f_wine8" min="1"><br><br>
+
+            <input type="checkbox" id="inputWine9" name="wine9" value="wine9">
+            <label for="inputWine9">קסטלני וינו רוזה קורטה אל מינה</label><br>
+            <label for="amount9">כמות:</label>
+            <input type="number" id="amount9" name="amount_0f_wine9" min="1"><br><br>
+
+            <input type="checkbox" id="inputWine10" name="wine10" value="wine10">
+            <label for="inputWine10">קפסנס מס פיקוסה אדום</label><br>
+            <label for="amount10">כמות:</label>
+            <input type="number" id="amount10" name="amount_0f_wine10" min="1"><br><br>
+
+            <input type="checkbox" id="inputWine11" name="wine11" value="wine11">
+            <label for="inputWine11">קפסנס מס פיקוסה לבן</label><br>
+            <label for="amount11">כמות:</label>
+            <input type="number" id="amount11" name="amount_0f_wine11" min="1"><br><br>
+
+            <input type="checkbox" id="inputWine12" name="wine12" value="wine12">
+            <label for="inputWine12">רינקון דל סול מלבק</label><br>
+            <label for="amount12">כמות:</label>
+            <input type="number" id="amount12" name="amount_0f_wine12" min="1"><br><br>
+
+
+         </div>
+         <button onclick="document.getElementById('shoppingList').style.display='none'"><a
+               href="#payment">לתשלום</a></button>
+      </div>
+      <section id="payment">
+         <h2>לתשלום</h2>
+         <table>
+            <tbody>
+               <tr>
+                  <td class="table_label"><label for="name">שם:</label></td>
+                  <td class="table_input"><input type="text" name="name" id="name"></td>
+               </tr>
+               <tr>
+                  <td class="table_label"><label for="id">ת.ז:</label></td>
+                  <td><input type="text" name="id" id="id" max="12" min="7"></td>
+               </tr>
+               <tr>
+                  <td class="table_label"><label for="email">כתובת מייל:</label></td>
+                  <td class="table_input"><input type="email" id="email" name="email"></td>
+               </tr>
+               <tr>
+                  <td class="table_label"><label for="credit_card">מספר כרטיס אשראי:</label></td>
+                  <td class="table_input"><input type="text" name="credit_card" id="credit_card" maxlength="16"></td>
+               </tr>
+               <tr>
+                  <td class="table_label"><label for="3_numbers_of_the_credit_card">3 ספרות בגב הכרטיס:</label></td>
+                  <td class="table_input"><input type="text" name="3_numbers_of_the_credit_card"
+                        id="3_numbers_of_the_credit_card" maxlength="3"></td>
+               </tr>
+               <tr>
+                  <td class="table_label"><label for="credit_validity">תוקף:</label></td>
+                  <td class="table_input"><input type="date" name="credit_validity" id="credit_validity"></td>
+               </tr>
+               <tr>
+                  <td class="table_label"><label for="location-input">כתובת:</label></td>
+                  <td><input id="location-input" type="text" placeholder="הזן כתובת מלאה"></td>
+               </tr>
+            </tbody>
+         </table>
+         <div id="table2">
+            <label for="name">שם:</label><br>
+            <input type="text" name="name" id="name"><br>
+            <label for="id">ת.ז:</label><br>
+            <input type="text" name="id" id="id"><br>
+            <label for="email">אימיל:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="credit_card">מספר כרטיס אשראי:</label><br>
+            <input type="text" name="credit_card" id="credit_card" maxlength="16"><br>
+            <label for="3_numbers_of_the_credit_card">3 ספרות בגב הכרטיס:</label><br>
+            <input type="text" name="3_numbers_of_the_credit_card" id="3_numbers_of_the_credit_card" maxlength="3"><br>
+            <label for="credit_validity">תוקף:</label><br>
+            <input type="date" name="credit_validity" id="credit_validity"><br>
+            <label for="location-input">כתובת:</label><br>
+            <input id="location-input" type="text" placeholder="הזן כתובת מלאה">
+         </div>
+         <br>
+         <input id="submit" type="submit" value="להזמנה">
+
+      </section>
+
+   </form>
+
+
+</body>

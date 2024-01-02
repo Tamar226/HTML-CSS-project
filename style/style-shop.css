@@ -1,0 +1,727 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&family=Varela+Round&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Varela Round', sans-serif;
+}
+
+#checking {
+    position: fixed;
+    z-index: 50;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+#q18 {
+    margin: auto;
+    margin-top: 10%;
+    width: 50%;
+    background-image: url(../images/רקע10.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 5%;
+    color: white;
+    font-size: 1.5rem;
+}
+
+#q18 button {
+    box-sizing: border-box;
+    margin: 2vw;
+    padding: 5%;
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: 'Varela Round', sans-serif;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    border: 5px solid white;
+    padding: 10px 40px;
+}
+
+#q18 button:hover {
+    background-color: white;
+    color: black;
+
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    color: white;
+    background-color: black;
+    text-align: center;
+    line-height: 1.8;
+    font-size: 2.5vh;
+    height: 3rem;
+    z-index: 20;
+    width: 100%;
+}
+
+#navImg {
+    background-color: white;
+    height: 3rem;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+#logo {
+    height: 3rem;
+    display: inline-block;
+    margin: 0;
+}
+
+#navBag {
+    position: absolute;
+    height: 2rem;
+    left: 3px;
+    top: 3px;
+}
+
+#navBag:hover {
+    opacity: 0.5;
+}
+
+#navBag:active {
+    opacity: 1;
+}
+
+#home {
+    position: absolute;
+    height: 2.5rem;
+    right: 3px;
+    top: 3px;
+}
+
+#home:hover {
+    opacity: 0.3;
+}
+
+#home:active {
+    opacity: 0.8;
+}
+
+#navH:hover {
+    background-color: lavender;
+    border-color: lavender;
+}
+
+nav p {
+    margin: 0 auto;
+    padding: 0;
+
+}
+
+/*header*/
+.image-gallery {
+    margin: auto;
+    height: 600px;
+    position: relative;
+}
+
+.image-container {
+    /* width: 100%; */
+    height: 100%;
+    /* position: relative; */
+    overflow: hidden;
+    background: #fff;
+}
+
+.thumbnails {
+    width: 100%;
+    display: flex;
+}
+
+.thumbnails label {
+    display: inline-block;
+    width: 150vw;
+    height: 7vw;
+    background-size: cover;
+    margin: 0;
+    flex: 1 1 150px;
+    cursor: pointer;
+}
+
+.image-1,
+.image-2,
+.image-3,
+.image-4 {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: all 1.2s ease-out;
+}
+
+.image-1,
+.thumbnails label[for="image1"] {
+    background-image: url('../images/עיצוב\ ללא\ שם\ \(10\).png');
+}
+
+.image-2,
+.thumbnails label[for="image2"] {
+    background-image: url('../images/עיצוב\ ללא\ שם\ \(5\).png');
+}
+
+.image-3,
+.thumbnails label[for="image3"] {
+    background-image: url('../images/עיצוב\ ללא\ שם\ \(9\).png');
+}
+
+.image-4,
+.thumbnails label[for="image4"] {
+    background-image: url('../images/עיצוב\ ללא\ שם\ new.png');
+}
+
+#image1:checked+.image-1,
+#image2:checked+.image-2,
+#image3:checked+.image-3,
+#image4:checked+.image-4 {
+    opacity: 1;
+}
+
+.image-gallery input[type="radio"] {
+    position: absolute;
+    top: 550px;
+    z-index: 10;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    background-color: #00000033;
+    height: 16px;
+    width: 16px;
+    border: 3px solid #f1f1f1;
+    border-radius: 16px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0px 1px 4px #00000088;
+}
+
+.image-gallery input[type="radio"]:hover {
+    background-color: #f7f7f780;
+}
+
+.image-gallery input[type="radio"]:checked {
+    background-color: #f1f1f1;
+}
+
+.image-gallery input[type="radio"]:nth-of-type(1) {
+    left: 50%;
+    margin-left: -36px;
+}
+
+.image-gallery input[type="radio"]:nth-of-type(2) {
+    left: 50%;
+    margin-left: -12px;
+}
+
+.image-gallery input[type="radio"]:nth-of-type(3) {
+    left: 50%;
+    margin-left: 12px;
+}
+
+.image-gallery input[type="radio"]:nth-of-type(4) {
+    left: 50%;
+    margin-left: 36px;
+}
+
+.image-gallery label.prev,
+.image-gallery label.next {
+    position: absolute;
+    top: 50%;
+    z-index: 100;
+    color: #f1f1f1;
+    text-shadow: 0px 1px 4px #00000088;
+    font-family: "Georgia", "Apple Symbols", serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    margin-top: -20px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.5s linear;
+}
+
+.image-gallery:hover label.prev,
+.image-gallery:hover label.next {
+    opacity: 1;
+}
+
+.image-gallery label.prev:before {
+    content: '\003c'
+}
+
+.image-gallery label.next:before {
+    content: '\003e'
+}
+
+.image-gallery label.prev {
+    right: 10px;
+}
+
+.image-gallery label.next {
+    left: 10px;
+}
+
+.image-gallery label.prev:hover,
+.image-gallery label.next:hover {
+    margin-top: -22px;
+    text-shadow: 0px 3px 4px #00000088;
+}
+
+header {
+
+
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+    line-height: 6;
+    text-align: center;
+
+}
+
+#heading {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    /* box-sizing: border-box;
+    padding: 0 30%; */
+}
+
+#heading div {
+    margin: 0 auto;
+}
+
+header h1 {
+    margin-top: 0%;
+    color: white;
+    font-size: 3em;
+}
+
+header button {
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    border: 5px solid white;
+    padding: 10px 40px;
+}
+
+header button:hover {
+    background-color: white;
+
+}
+
+header button:hover a {
+    color: #111;
+}
+
+header button a {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: 'Varela Round', sans-serif;
+}
+
+/* shop */
+#shop {
+    margin: auto;
+    padding: 10vh 10vw;
+    display: grid;
+    grid-template-rows: repeat 9 1fr;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.shop_item {
+
+    position: relative;
+    height: 250px;
+    width: 200px;
+    background-color: blanchedalmond;
+    margin: 10px 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#shop p {
+    margin-right: 15px;
+
+}
+
+
+#wine1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-image: url(../images/אלכסנדר\ בונה\ פרל\ רוזה.jpg);
+
+}
+
+#p1 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+#wine2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-image: url(../images/דה\ אתנה\ רוזה.jpg);
+
+}
+
+#p2 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+#wine3 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background-image: url(../images/לואיס\ פליפה\ נוקוס\ מלבק.jpg);
+
+}
+
+#p3 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+#wine4 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    background-image: url(../images/לינדמנ\'ס\ שיראז.jpg);
+
+}
+
+#p4 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+
+#wine5 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    background-image: url(../images/מוסקדה\ -חקלאים-.jpg);
+
+}
+
+#p5 {
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+
+#wine6 {
+    grid-column: 3/4;
+    grid-row: 3/4;
+    background-image: url(../images/פינטו\ קיאנטי\ קלאסיקו\ ריזרבה.jpg);
+
+}
+
+#p6 {
+    grid-column: 3/4;
+    grid-row: 4/5;
+}
+
+#wine7 {
+    grid-column: 1/2;
+    grid-row: 5/6;
+    background-image: url(../images/פלטר\ סובניון\ בלאן\ 500\ מל.jpg);
+
+}
+
+#p7 {
+    grid-column: 1/2;
+    grid-row: 6/7;
+}
+
+#wine8 {
+    grid-column: 2/3;
+    grid-row: 5/6;
+    background-image: url(../images/פסקווא\ רוזה\ מבעבע.jpg);
+
+}
+
+#p8 {
+    grid-column: 2/3;
+    grid-row: 6/7;
+}
+
+#wine9 {
+    grid-column: 3/4;
+    grid-row: 5/6;
+    background-image: url(../images/קסטלני\ וינו\ רוזה\ קורטה\ אל\ מינה.jpg);
+
+}
+
+#p9 {
+    grid-column: 3/4;
+    grid-row: 6/7;
+}
+
+#wine10 {
+    grid-column: 1/2;
+    grid-row: 7/8;
+    background-image: url(../images/קפסנס\ מס\ פיקוסה\ אדום.jpg);
+
+}
+
+#p10 {
+    grid-column: 1/2;
+    grid-row: 8/9;
+}
+
+#wine11 {
+    grid-column: 2/3;
+    grid-row: 7/8;
+    background-image: url(../images/קפסנס\ מס\ פיקוסה\ לבן.jpg);
+
+}
+
+#p11 {
+    grid-column: 2/3;
+    grid-row: 8/9;
+}
+
+#wine12 {
+    grid-column: 3/4;
+    grid-row: 7/8;
+    background-image: url(..//images/רינקון\ דל\ סול\ מלבק.jpg);
+
+}
+
+#p12 {
+    grid-column: 3/4;
+    grid-row: 8/9;
+}
+
+#shop h4 {
+    grid-column: 2/3;
+    grid-row: 9/10;
+    text-align: center;
+    font-size: 1.5rem;
+    color: lightcoral;
+}
+
+#shop h4:hover {
+    color: rgba(240, 128, 128, 0.7);
+}
+
+.fa-cart-shopping {
+
+    position: absolute;
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 3px;
+    font-size: 1.2rem;
+    left: 3px;
+    top: 3px;
+}
+
+.fa-cart-shopping:hover {
+    font-size: 1.25rem;
+    background-color: lavender;
+    color: lightcoral;
+    border-color: lavender;
+}
+
+.fa-cart-shopping:active {
+    color: rgb(192, 46, 46);
+}
+
+.fa-regular {
+    position: absolute;
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 3px;
+    font-size: 1.2rem;
+    left: 3px;
+    top: 15px;
+}
+
+/* shoppingList */
+#shoppingList {
+    background-image: url(../images/רקע8.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: none;
+    position: fixed;
+    top: 10vh;
+    bottom: 10vh;
+    line-height: 2;
+    text-align: center;
+    background-color: white;
+    width: 50%;
+    height: 60%;
+    overflow: auto;
+    margin: 0 auto;
+    z-index: 12;
+    left: 15vw;
+    right: 15vw;
+    border: 1px solid black;
+    border-radius: 3px;
+
+
+}
+
+#shoppingChart {
+
+    text-align: right;
+    width: 70%;
+    margin: 0 auto;
+}
+
+#shoppingList i {
+
+    position: sticky;
+    left: 95%;
+}
+
+#shoppingChart input[type="checkbox"] {
+    margin: 0;
+}
+
+#shoppingChart input[type="number"] {
+    width: 3.5rem;
+    margin: 0;
+}
+
+#shoppingList button {
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 5px 20px;
+    margin-bottom: 5vh;
+    margin-left: auto;
+}
+
+#shoppingList button:hover {
+    background-color: black;
+}
+
+#shoppingList button:hover a {
+    color: white;
+}
+
+#shoppingList button a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: 'Varela Round', sans-serif;
+}
+
+input {
+
+    border-radius: 0;
+    box-shadow: none;
+    border-width: 0 0 1px;
+}
+
+/* payment */
+#payment {
+    color: white;
+    background-color: rgb(88, 80, 80);
+    text-align: center;
+    line-height: 3;
+    padding: 5vw;
+}
+
+#payment table {
+    margin: 0 auto;
+}
+
+.table_input {
+    text-align: right;
+}
+
+.table_label {
+    width: 60%;
+    text-align: right;
+
+}
+
+input {
+    width: 10rem;
+}
+
+input[type="checkbox"] {
+    width: 1rem;
+}
+
+#submit {
+    background-color: lightcoral;
+    border-radius: 5px;
+    border: 5px solid lightcoral;
+    padding: 10px 0px;
+    font-size: 2rem;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+}
+
+#submit:hover {
+    opacity: 0.85;
+}
+
+#table2 {
+    display: none;
+}
+
+@media (max-width:800px) {
+    body {
+        font-size: 1.25rem;
+    }
+
+    h1 {
+        padding-top: 2rem;
+    }
+
+    #q18 {
+        width: 85%;
+
+
+    }
+
+    #shop {
+
+        padding: 7rem 0 4rem;
+        display: block;
+        text-align: center;
+
+    }
+
+    .shop_item {
+        margin: auto;
+        height: 300px;
+        width: 270px
+    }
+
+    #payment {
+        padding-top: 2rem;
+    }
+
+    #payment table {
+        display: none;
+    }
+
+    #table2 {
+        display: block;
+        text-align: center;
+    }
+
+    #shoppingList {
+        margin: 0%;
+        right: 0;
+        width: 100%;
+
+    }
+
+    header {
+        line-height: 4;
+
+    }
+
+}

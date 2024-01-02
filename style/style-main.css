@@ -1,0 +1,755 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&family=Varela+Round&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Varela Round', sans-serif;
+  background-color: rgb(58, 52, 52);
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+/*nav*/
+nav {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  right: 0;
+  height: 5rem;
+
+}
+
+#navMenu {
+  color: rgba(255, 255, 255, 0.8);
+  padding: 1%;
+  margin-right: 0;
+  width: 10%;
+  font-size: 2rem;
+  box-sizing: border-box;
+  display: none;
+}
+
+
+#hidenNav {
+  list-style-type: none;
+  display: none;
+  position: fixed;
+  top: 3rem;
+  z-index: 12;
+  background-color: #333;
+  opacity: 0.9;
+  text-decoration: none;
+  right: 0px;
+  padding: 1rem 0;
+  padding-right: 0;
+  line-height: 1.5;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+
+
+#hidenNav li a {
+  box-sizing: border-box;
+  text-decoration: none;
+  color: white;
+  display: block;
+  width: 100%;
+  padding: 0 2em;
+
+}
+
+#hidenNav li a :hover {
+  background-color: #111;
+}
+
+#hidenNav li a :active {
+  background-color: #111;
+}
+
+#firstUl {
+  line-height: 4vw;
+  height: 5rem;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  display: grid;
+  grid-template-columns: 20% 15% 15% 30% 20%;
+  opacity: 0.7;
+  right: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+#firstUl li {
+  display: inline-block;
+  height: 5rem;
+  width: 100%;
+  margin: 0;
+}
+
+#bigLi {
+  grid-column: 4/5;
+}
+
+#li1 {
+  grid-column: 1/2;
+}
+
+#li2 {
+  grid-column: 2/3;
+}
+
+#li3 {
+  grid-column: 3/4;
+}
+
+#li5 {
+  grid-column: 5/6;
+}
+
+#firstUl li a {
+
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  font-size: 1.5rem;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+/* header*/
+header {
+
+  margin: 0;
+  text-align: center;
+
+}
+
+header video {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+#video1 {
+  display: block;
+}
+
+#video2 {
+  display: none;
+}
+
+header div {
+
+  position: absolute;
+  width: 100%;
+  height: 20vw;
+  top: 0;
+}
+
+header img {
+  box-sizing: border-box;
+  width: 50%;
+  margin: 5% 25%;
+  padding: 0;
+
+}
+
+
+
+/*about*/
+#about {
+  color: whitesmoke;
+  background-color: rgb(58, 52, 52);
+  display: grid;
+  padding: 2%;
+  box-sizing: border-box;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 30% 70%;
+  height: 34rem;
+  margin-top: -10px;
+  text-align: justify;
+  padding-top: 3rem;
+}
+
+#about h2 {
+  grid-column: 1/3;
+  grid-row: 1/1;
+  box-sizing: border-box;
+  padding: 0;
+  padding-left: 0;
+  font-size: 2rem;
+
+}
+
+#about p {
+  grid-row: 2/3;
+  grid-column: 1/4;
+  margin-left: 3vw;
+  box-sizing: border-box;
+
+  padding: 0;
+
+
+
+}
+
+#about #img1 {
+  grid-column: 4/4;
+  grid-row-start: 2/2;
+
+
+}
+
+#about #img2 {
+  grid-column: 4/4;
+  grid-row: 1/1;
+
+}
+
+#about #img3 {
+  grid-column: 5/5;
+  grid-row: 1/3;
+
+}
+
+#about img {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 2%;
+  border: 10x solid rgb(58, 52, 52);
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/*about2*/
+#about2 {
+  background-color: rgb(233, 230, 227);
+  display: grid;
+  padding: 4%;
+  box-sizing: border-box;
+  grid-template-columns: 16% 20% 20% 20% 20%;
+  grid-template-rows: 36% 26% 30%;
+  height: 50rem;
+  grid-gap: 4px 2px;
+
+}
+
+#about2 h2 {
+  font-size: 2rem;
+  font-weight: bolder;
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+
+#about2 img {
+  grid-column: 1/3;
+  grid-row: 1/3;
+  margin: auto;
+  margin-bottom: 0;
+  box-sizing: border-box;
+  width: 20vw;
+}
+
+#about2 a {
+  color: rgb(107, 9, 9);
+  text-decoration: none;
+
+}
+
+#about2 a:hover {
+  color: rgb(180, 104, 104);
+}
+
+#about2 p {
+  padding-top: 1rem;
+}
+
+#about2 #p1 {
+  grid-column: 3/6;
+  grid-row-start: 0/1;
+  padding-top: 0;
+}
+
+#about2 #p2 {
+  grid-column: 3/6;
+  grid-row-start: 1/2;
+}
+
+#about2 #p3 {
+  grid-column: 1/4;
+  grid-row-start: 2/3;
+  padding-top: 0;
+}
+
+span {
+  font-size: 30px;
+  font-weight: bold;
+
+}
+
+/*persons*/
+#ourPeople {
+  display: flex;
+  column-gap: 8%;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  background-color: rgb(58, 52, 52);
+  padding: 8%;
+  color: white;
+  height: 25rem;
+
+}
+
+#man1 {
+  margin: 0;
+  width: 28%;
+}
+
+#man2 {
+  margin: 0;
+  width: 28%;
+}
+
+#man3 {
+  margin: 0;
+  width: 28%;
+}
+
+#person1 {
+  position: relative;
+  width: 100%;
+
+}
+
+#person2 {
+  position: relative;
+  width: 100%;
+}
+
+#person3 {
+  position: relative;
+  width: 100%;
+}
+
+
+#ourPeople p {
+  font-size: 1.25rem;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+.personImg {
+  height: 21vw;
+  border: 2px solid rgba(107, 9, 9, 1);
+  border-radius: 200px;
+}
+
+.nameWinemaker {
+
+  position: absolute;
+  display: inline-block;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 21.5vw;
+  color: rgba(107, 9, 9, 0);
+  padding: 0;
+  text-align: center;
+
+
+}
+
+.nameWinemaker h3 {
+  margin: 0;
+  margin-top: 17vw;
+}
+
+.nameWinemaker:hover {
+  color: red;
+  text-shadow: 1px 1px black;
+}
+
+#ourPeople #qoute1 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+#ourPeople #qoute1 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+#ourPeople #qoute1 {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+
+
+/*contat*/
+#contact {
+  background-image: url(../images/עיצוב\ ללא\ שם\ \(new.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 2rem;
+  padding: 10vw 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+
+}
+
+#contactData {
+  box-sizing: border-box;
+  background-color: black;
+  opacity: 0.6;
+  text-align: center;
+  width: 40%;
+  height: 17rem;
+  padding: 10px;
+  margin-left: 3%;
+
+
+}
+
+#contactData p {
+  line-height: 1.5;
+  font-size: 1.2rem;
+}
+
+#contact p a {
+  color: white;
+  text-decoration: none;
+}
+
+iframe {
+  height: 17rem;
+  width: 40%;
+  box-sizing: border-box;
+  margin-right: 3%;
+
+}
+
+/*footer*/
+footer {
+  background-color: rgb(233, 230, 227);
+  padding: 3vw 10vw;
+  text-align: center;
+}
+
+.icons {
+  margin: 2vw;
+  font-size: 1.5rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+.fa-youtube {
+  color: red;
+}
+
+.fa-youtube:hover {
+  opacity: 0.5;
+}
+
+.fa-facebook {
+  color: rgb(59, 88, 154);
+}
+
+.fa-facebook:hover {
+  opacity: 0.5;
+}
+
+.fa-twitter {
+  color: rgb(0, 169, 232);
+}
+
+.fa-twitter:hover {
+  opacity: 0.5;
+}
+
+.fa-instagram:hover {
+  opacity: 0.5;
+}
+
+@media (min-width:1500px) {
+  #ourPeople {
+    height: 30rem;
+  }
+}
+
+@media (max-width:850px) {
+  #about #img3 {
+    grid-row: 1/3;
+    grid-column: 4/6;
+  }
+
+  #about #img2 {
+    display: none;
+  }
+
+  #about #img1 {
+    display: none;
+  }
+
+  #about2 {
+    height: 60rem;
+  }
+
+  #about2 img {
+    display: none;
+  }
+
+  .nameWinemaker h3 {
+    font-size: 1rem;
+    margin-top: 14vw;
+  }
+
+  #contact {
+    display: block;
+    text-align: center;
+  }
+
+  #contactData {
+    width: 70%;
+    margin: auto;
+
+  }
+
+  iframe {
+    width: 70%;
+    margin-right: 0;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width:750px) {
+  #firstUl {
+    display: none;
+  }
+
+  nav {
+    background-color: #333;
+    opacity: 0.9;
+    height: 3rem;
+  }
+
+  #navMenu {
+    display: block;
+
+  }
+
+
+  #hidenNav li a {
+    text-decoration: none;
+    color: white;
+  }
+
+  nav i {
+    display: block;
+    color: white;
+    margin: auto;
+
+  }
+
+  #about {
+    padding-top: 2rem;
+  }
+
+}
+
+@media (max-width:700px) {
+  #about {
+    display: block;
+    height: 25rem;
+  }
+
+  #about img {
+    display: none;
+  }
+
+  #about2 {
+    display: block;
+    height: 60rem;
+    background-image: url(../images/עיצוב\ ללא\ שם\ \(13\).png);
+    background-repeat: repeat;
+    background-size: cover;
+    color: white;
+  }
+
+  #about2 a {
+    color: rgb(180, 104, 104);
+
+  }
+
+  #about2 a:hover {
+    color: rgb(107, 9, 9);
+  }
+
+  #about2 p,
+  #about2 h2 {
+    background-color: #111;
+    display: inline-block;
+    opacity: 0.7;
+  }
+
+  #ourPeople {
+    display: block;
+    height: 63rem;
+    padding: 2rem 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  #man1 {
+    height: 15rem;
+    width: 100%;
+    padding: 3rem 0;
+    margin: 0;
+  }
+
+  #man2 {
+    width: 100%;
+    padding: 3rem 0;
+    height: 15rem;
+    margin: 0;
+  }
+
+  #man3 {
+    padding: 3rem 0;
+    margin: 0;
+    height: 15rem;
+    width: 100%;
+  }
+
+  #person1 {
+    height: 80%;
+
+  }
+
+  #person2 {
+    height: 80%;
+
+  }
+
+  #person3 {
+    height: 80%;
+
+  }
+
+  .personImg {
+    height: 100%;
+
+  }
+
+
+}
+
+@media (max-width:555px) {
+  header img {
+    margin: 0;
+    width: 85%;
+  }
+
+  #video1 {
+    display: none;
+  }
+
+  #video2 {
+    display: block;
+  }
+
+  #about {
+    height: 30rem;
+  }
+
+  #about2 {
+    height: 70rem;
+  }
+
+  .nameWinemaker h3 {
+
+    margin-top: 20vw;
+  }
+
+  #contactData {
+    width: 90%;
+
+
+  }
+
+  iframe {
+    width: 90%;
+
+  }
+}
+
+@media (max-width:450px) {
+  #about2 {
+    height: 75rem;
+  }
+
+  header img {
+    margin: 0;
+    width: 100%;
+  }
+
+  .nameWinemaker h3 {
+
+    margin-top: 30vw;
+  }
+}
+
+@media (max-width:400px) {
+  #ourPeople {
+    height: 65rem;
+  }
+
+  #about {
+    height: 35rem;
+  }
+
+  #about2 {
+    height: 83rem;
+  }
+
+}
+
+@media (max-width:365px) {
+  #about2 {
+    height: 85rem;
+  }
+}
+
+@media (max-width:340px) {
+  #about2 {
+    height: 90rem;
+  }
+}

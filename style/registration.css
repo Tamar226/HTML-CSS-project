@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&family=Varela+Round&display=swap');
+
+body {
+    background-image: url(../images/רקע5.png);
+    background-size: cover;
+    font-family: 'Varela Round', sans-serif;
+    background-repeat: no-repeat;
+
+}
+
+#logo {
+    position: fixed;
+    width: 50%;
+    top: 5rem;
+    z-index: -1;
+    opacity: 0.3;
+    left: 25%;
+}
+
+#home {
+    position: absolute;
+    height: 2.5rem;
+    right: 3px;
+    top: 0;
+}
+
+#home:hover {
+    opacity: 0.3;
+}
+
+#home:active {
+    opacity: 0.8;
+}
+
+nav a {
+    top: 1rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: rgb(59, 59, 59);
+    position: fixed;
+
+}
+
+#return {
+    left: 2rem;
+    top: 1rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: rgb(59, 59, 59);
+    position: fixed;
+}
+
+nav a:hover {
+    color: rgb(128, 92, 92);
+}
+
+#return:hover {
+    color: rgb(128, 92, 92);
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+h2 {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+#warrper {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    flex-wrap: wrap;
+    border-radius: 50px;
+    width: 60%;
+    height: 70vh;
+    margin: auto;
+    background-color: rgba(206, 203, 203, 0.5);
+    flex-direction: column;
+}
+
+form {
+    margin: 0;
+}
+
+input {
+    width: 12rem;
+    height: 1.8rem;
+    border: 1px 0 5em 0;
+    background-color: rgba(206, 203, 203, 0);
+
+}
+
+#course {
+    width: 12.3rem;
+    height: 2.1rem;
+    border: 1px 0 5em 0;
+    border-color: black;
+    background-color: rgba(206, 203, 203, 0);
+
+}
+
+#extra {
+    margin: auto;
+    background-color: rgba(206, 203, 203, 0);
+    border-color: black;
+    border: 1px 0 5em 0;
+}
+
+.details {
+    font-size: 1.5em;
+    text-align: center;
+    margin: auto;
+    border: 1px 0 5em 0;
+}
+
+#close {
+    font-family: 'Varela Round', sans-serif;
+    background-color: rgb(196, 146, 146);
+    color: white;
+    border-color: white;
+    border-radius: 35px;
+    height: 4.5rem;
+    width: 20rem;
+    font-size: 1.5rem;
+    margin: auto;
+    padding: 5px;
+    text-align: center;
+    line-height: 4rem;
+}
+
+#send {
+    display: none;
+    position: fixed;
+    bottom: 5rem;
+    width: 40%;
+    left: 30%;
+    background-color: white;
+    padding-bottom: 2.5vh;
+}
+
+button {
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    padding: 5px 20px;
+
+    width: 30%;
+    margin-right: 35%;
+
+
+}
+
+button:hover {
+    background-color: rgb(7, 7, 7);
+    color: white;
+}
+
+@media (max-width:800px) {
+    #logo {
+        top: 17rem;
+    }
+
+    #extra {
+        width: 80%;
+        height: 50%;
+    }
+
+    #warrper {
+        font-size: 2.5vh;
+    }
+
+}
+
+@media (max-width:800px) {
+    #warrper {
+        flex-direction: row;
+        height: 110vh;
+    }
+
+    #extra {
+        width: 12rem;
+        height: 3rem;
+    }
+
+    p {
+
+        font-size: 1em;
+    }
+
+    #close {
+
+        line-height: 2rem;
+    }
+}
+@media (max-width:400px){
+    #logo{
+        display:none;
+    }
+}
